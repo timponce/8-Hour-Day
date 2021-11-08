@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>8 Hour Day</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main-container">
+            <h1>8 Hour Day</h1>
+            <div id="slider-container">
+                <input type="range" min="1" max="96" value="37" class="slider">
+            </div>
+            <div id="output-container">
+                <div class="output" id="begin-work">Your work day begins at:</div>
+                <div class="output break">
+                    <div class="output begin-break">Your first break is from:</div>
+                    <div class="output end-break">to:</div>
+                </div>
+                <div class="output" id="end-work">Your work day ends at:</div>
+            </div>
+            <div id="options">
+                <div id="break-included-question">
+                    <div>Is your break included in your work day?</div>
+                    <input type="radio" id="yes" name="break-option-1" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="break-option-1" value="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+            <footer>Made by Tim Ponce <a href="https://github.com/timponce">https://github.com/timponce <img src="images/GitHub-Mark-32px.png" alt="GitHub Logo"></a></footer>
+        </div>
+    </body>
+</html>
