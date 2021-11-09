@@ -1,8 +1,9 @@
-const slider = document.querySelector('.slider');
+const sliderWorkStart = document.getElementById('slider-work-start');
+const sliderWorkEnd = document.getElementById('slider-work-end');
 const startTime = document.getElementById('work-start-time');
 
 function getStartTime() {
-    let value = slider.value;
+    let value = sliderWorkStart.value;
     startTime.textContent = convertTohhmm(value);
 };
 
@@ -13,10 +14,13 @@ function convertTohhmm(value) {
     let rawHour = rawTimeArray[0];
     let twenty4Hr = rawHour - 1;
     let twelveHr;
+    let ampm;
     if (twenty4Hr > 12) {
         twelveHr = twenty4Hr - 12;
+        ampm = 'PM'
     } else {
         twelveHr = twenty4Hr;
+        ampm = 'AM'
     }
     let rawMinute = rawTimeArray[1];
     let minute;
@@ -33,6 +37,8 @@ function convertTohhmm(value) {
         default:
             minute = '00';
     }
-    let hourMinute = twelveHr + ':' + minute;
+    let hourMinute = twelveHr + ':' + minute + ' ' + ampm;
+    if (hourMinute == '12:00 AM') {hourMinute = '12:00 PM'}
+    else if (hourMinute == '12:00 PM') {hourMinute = '12:00AM'};
     return hourMinute;
 }
