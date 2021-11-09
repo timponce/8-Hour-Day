@@ -59,29 +59,29 @@ h1 {
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     pointer-events: auto;
-    height: 3rem;
-    width: 3rem;
-    background-color: transparent;
-    border-style: none;
+    height: 1.5rem;
+    width: 1rem;
+    background-color: white;
+    border-style: solid;
     background-size: contain;
     background-position: center center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 .slider::-moz-range-thumb {
     -webkit-appearance: none;
     pointer-events: auto;
-    height: 3rem;
-    width: 3rem;
-    background-color: transparent;
-    border-style: none;
+    height: 1.5rem;
+    width: 1rem;
+    background-color: white;
+    border-style: solid;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    transform: translate(0%, -5%)
+    /* transform: translate(0%, -5%) */
 }
 
-.slider-work-start::-webkit-slider-thumb {
+/* .slider-work-start::-webkit-slider-thumb {
     background-image: url(/images/hot-beverage_2615.png);
 }
 
@@ -95,7 +95,7 @@ h1 {
 
 .slider-work-end::-moz-range-thumb {
     background-image: url(/images/beer-mug_1f37a.png);
-}
+} */
 
 #information {
     margin-top: 8rem;
