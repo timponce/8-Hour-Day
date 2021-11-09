@@ -1,13 +1,16 @@
 const sliderWorkStart = document.getElementById('slider-work-start');
 const sliderWorkEnd = document.getElementById('slider-work-end');
 const startTime = document.getElementById('work-start-time');
+const endTime = document.getElementById('work-end-time');
 
-function getStartTime() {
-    let value = sliderWorkStart.value;
-    startTime.textContent = convertTohhmm(value);
+function getTimes() {
+    let valueStart = sliderWorkStart.value;
+    startTime.textContent = convertTohhmm(valueStart);
+    let valueEnd = sliderWorkEnd.value;
+    endTime.textContent = convertTohhmm(valueEnd);
 };
 
-getStartTime();
+getTimes();
 
 function convertTohhmm(value) {
     let rawTimeArray = value.split('.');

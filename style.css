@@ -59,11 +59,13 @@ h1 {
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 1.5rem;
+    pointer-events: auto;
 }
 
 .slider::-moz-range-thumb {
     -webkit-appearance: none;
     height: 1.5rem;
+    pointer-events: auto;
 }
 
 #information {
