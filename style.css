@@ -58,14 +58,43 @@ h1 {
 
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 1.5rem;
     pointer-events: auto;
+    height: 3rem;
+    width: 3rem;
+    background-color: transparent;
+    border-style: none;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .slider::-moz-range-thumb {
     -webkit-appearance: none;
-    height: 1.5rem;
     pointer-events: auto;
+    height: 3rem;
+    width: 3rem;
+    background-color: transparent;
+    border-style: none;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.slider-work-start::-webkit-slider-thumb {
+    background-image: url(/images/hot-beverage_2615.png);
+}
+
+.slider-work-start::-moz-range-thumb {
+    background-image: url(/images/hot-beverage_2615.png);
+    transform: translate(0%, 100%;)
+}
+
+.slider-work-end::-webkit-slider-thumb {
+    background-image: url(/images/beer-mug_1f37a.png);
+}
+
+.slider-work-end::-moz-range-thumb {
+    background-image: url(/images/beer-mug_1f37a.png);
 }
 
 #information {
