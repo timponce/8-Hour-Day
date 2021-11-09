@@ -3,6 +3,22 @@ const sliderWorkEnd = document.getElementById('slider-work-end');
 const startTime = document.getElementById('work-start-time');
 const endTime = document.getElementById('work-end-time');
 
+sliderWorkStart.addEventListener('input', function() {
+    let valueStart = sliderWorkStart.value;
+    let valueEndNumber = +valueStart + 9;
+    sliderWorkEnd.value = valueEndNumber;
+    let valueEndString = valueEndNumber.toString();
+    endTime.textContent = convertTohhmm(valueEndString.toString());
+});
+
+sliderWorkEnd.addEventListener('input', function() {
+    let valueEnd = sliderWorkEnd.value;
+    let valueStartNumber = +valueEnd - 9;
+    sliderWorkStart.value = valueStartNumber;
+    let valueStartString = valueStartNumber.toString();
+    startTime.textContent = convertTohhmm(valueStartString.toString());
+});
+
 function getTimes() {
     let valueStart = sliderWorkStart.value;
     startTime.textContent = convertTohhmm(valueStart);
@@ -45,3 +61,8 @@ function convertTohhmm(value) {
     else if (hourMinute == '12:00 PM') {hourMinute = '12:00AM'};
     return hourMinute;
 }
+
+// function scaleSlider() {
+//     let valueStart = sliderWorkStart.value;
+//     sliderWorkEnd.value = valueStart + 9;
+// }

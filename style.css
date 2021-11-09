@@ -78,6 +78,7 @@ h1 {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
+    transform: translate(0%, -5%)
 }
 
 .slider-work-start::-webkit-slider-thumb {
@@ -86,7 +87,6 @@ h1 {
 
 .slider-work-start::-moz-range-thumb {
     background-image: url(/images/hot-beverage_2615.png);
-    transform: translate(0%, 100%;)
 }
 
 .slider-work-end::-webkit-slider-thumb {
