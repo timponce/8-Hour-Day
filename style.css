@@ -31,6 +31,7 @@ h1 {
 }
 
 #slider-container {
+    flex: 0 0 auto;
     position: relative;
     align-self: center;
     height: 1rem;
