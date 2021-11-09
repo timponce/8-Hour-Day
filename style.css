@@ -30,9 +30,6 @@ h1 {
     font-size: 10vw;
 }
 
-.slider-container {
-}
-
 .slider {
     -webkit-appearance: none;
     width: 80%;
@@ -41,18 +38,36 @@ h1 {
 
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
+    height: 1.5rem;
 }
 
 .slider::-moz-range-thumb {
     -webkit-appearance: none;
+    height: 1.5rem;
 }
 
-#output-container {
-    margin: 4rem 0;
+#information {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 3rem;
+}
+
+.output-container {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.input-text {
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    background-color: #248277;
+    border-style: none;
+    border-bottom: 2px white solid;
+    width: 100px;
 }
 
 .break {

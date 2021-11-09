@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <script src="main.js" defer></script>
+        <link rel="shortcut icon" href="images/icons8-8-50.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -13,20 +14,25 @@
         <div id="main-container">
             <h1>8 Hour Day</h1>
             <div id="slider-container">
-                <input type="range" min="1" max="96" value="37" class="slider">
+                <input type="range" min="1" max="25" step="0.25" value="10" class="slider" oninput="getStartTime()" autocomplete="off">
             </div>
-            <div id="output-container">
-                <div class="output" id="begin-work">Your work day begins at:</div>
-                <div class="output break">
+            <div id="information">
+                <div class="output-container">
+                    <div class="output" id="begin-work">Your work day begins at:</div>
+                    <div class="time" id="work-start-time"></div> 
+                </div>
+                <div class="output-container break">
                     <div class="output begin-break">Your first break is from:</div>
                     <div class="output end-break">to:</div>
                 </div>
-                <div class="output" id="end-work">Your work day ends at:</div>
+                <div class="output-container">
+                    <div class="output" id="end-work">Your work day ends at:</div> 
+                </div>
             </div>
             <div id="options">
                 <div id="break-included-question">
                     <div>Is your break included in your work day?</div>
-                    <input type="radio" id="yes" name="break-option-1" value="yes">
+                    <input type="radio" id="yes" name="break-option-1" value="yes" checked>
                     <label for="yes">Yes</label>
                     <input type="radio" id="no" name="break-option-1" value="no">
                     <label for="no">No</label>
@@ -35,4 +41,10 @@
             <footer>Made by Tim Ponce <a href="https://github.com/timponce">https://github.com/timponce <img src="images/GitHub-Mark-32px.png" alt="GitHub Logo"></a></footer>
         </div>
     </body>
-</html>
+    </html>
+
+    <!-- Inputs for text. Would like to implement user being able to type in the times and have slider repsond.
+    <input type="text" class="input-text" id="start-time-work" name="start-time-work" value="9:00">
+    <input type="text" class="input-text" id="start-time-break-1" name="start-time-break-1" value="1:00">
+    <input type="text" class="input-text" id="end-time-break-1" name="end-time-break-1" value="1:30">
+    <input type="text" class="input-text" id="end-time-work" name="end-time-work" value="5:00"> -->
